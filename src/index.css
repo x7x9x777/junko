@@ -1,0 +1,90 @@
+
+@import "tailwindcss";
+
+  @theme {
+    --color-menu: #4d4c61;
+    --color-text-primary: #00001f;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: #2dcaf1;
+    --color-pink: #ed28b6;
+    --color-yellow: #e5b364;
+    --color-red: #e64e66;
+    --color-hypr-blue: #1a1288;
+    --color-purple: #2b2158;
+    --color-off-black: #221f20;
+    --color-energetic-purple: #3807d3;
+  }
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  
+}
+/* * {
+  margin: 0;
+} */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
+  margin: 0;
+}
+
+
+
+/* 
+:root {
+ 
+} */
+
+body {
+  font-size: 20px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  
+  
+}
+
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  
+}
+
+
+#app {
+  font-family: Roboto, sans-serif;
+  height: 100svh; 
+  isolation: isolate;
+  
+}
