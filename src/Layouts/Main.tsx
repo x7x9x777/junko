@@ -1,4 +1,5 @@
 import Slider from "../Components/Slider";
+import React from 'react';
 
 export default function Main() {
   return (
@@ -6,14 +7,14 @@ export default function Main() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="w-full pb-[10px] md:px-[3.75rem] min-h-[300px] sm:min-h-[540px] bg-[url('/Sitebackground.webp')] bg-cover bg-center flex justify-center  flex-col items-center"
+        className="flex flex-col items-center justify-center w-full min-h-[300px] sm:min-h-[540px] pb-[10px] bg-[url('/Sitebackground.webp')] bg-cover bg-center md:px-[3.75rem]"
       >
         <div className="flex flex-row my-[3.25rem]">
           <div className="flex flex-wrap !mx-auto">
-            <div className="w-full max-w-[1118px]   gap-8 flex lg:flex-row flex-col items-center justify-between  ">
+            <div className="flex flex-col items-center justify-between w-full max-w-[1118px] gap-8 lg:flex-row">
               {/* Text content */}
-              <div className="text-center w-full px-[1.25rem] md:px-0 md:text-left flex flex-col gap-2 ">
-                <h1 className="text-[3.125rem] md:text-[3.125rem] text-left">
+              <div className="flex flex-col w-full gap-2 px-[1.25rem] text-center md:px-0 md:text-left">
+                <h1 className="text-left text-[3.125rem] md:text-[3.125rem]">
                   Identity Security Starts Here
                 </h1>
                 <p className="text-left">
@@ -22,103 +23,113 @@ export default function Main() {
                 </p>
                 <a
                   href="#"
-                  className="mt-6 inline-block w-fit bg-[#3807d3] !text-white px-6 py-3 rounded-md hover:bg-gray-900 transition text-left font-medium"
+                  className="inline-block w-fit px-6 py-3 mt-6 font-medium text-left !text-white transition rounded-md bg-[#3807d3] hover:bg-gray-900"
                 >
                   GET A DEMO
                 </a>
               </div>
 
-              <div className="w-[100%] hidden md:block">
+              <div className="hidden w-[100%] md:block">
                 <Slider />
               </div>
+              
               <div className="flex flex-col gap-12 md:hidden">
                 {/* Item 1 */}
-                <div className="flex flex-row pl-[0.25rem] text-left items-center gap-8">
+                <div className="flex flex-row items-center gap-8 pl-[0.25rem] text-left">
                   <div>
                     <img
                       src="/hero_carousel_img_1.png"
-                      alt="Passwordless Authentication"
-                      className="!h-auto min-w-[125px] rounded-r-2xl max-[480px]:!max-w-[125px]"
+                      alt="Passwordless Authentication - Eliminate credential phishing attacks"
+                      width="125"
+                      height="125"
+                      className="min-w-[125px] !h-auto rounded-r-2xl max-[480px]:!max-w-[125px]"
+                      loading="eager"
+                      fetchPriority="high"
                     />
                   </div>
                   <div className="flex-1">
-                    <span className="text-[1.125rem]  max-[400px]:text-[1rem] font-medium text-[#1a1288]">
+                    <span className="font-medium text-[1.125rem] text-[#1a1288] max-[400px]:text-[1rem]">
                       Strong
                     </span>
-                    <h3 className="!mb-4 text-2xl max-[400px]:!text-[1.5rem] font-bold">
+                    <h3 className="!mb-4 text-2xl font-bold max-[400px]:!text-[1.5rem]">
                       Passwordless Authentication
                     </h3>
-                    <p className="mb-6 max-[400px]:!text-[1rem] text-gray-600">
+                    <p className="mb-6 text-gray-600 max-[400px]:!text-[1rem]">
                       Eliminate credential phishing attacks while improving user
                       experience for your workforce and customers
                     </p>
-
                     <a
                       href="#"
-                      className="inline-flex items-center !text-[#1a1288] font-medium "
+                      className="inline-flex items-center font-medium !text-[#1a1288]"
                     >
                       <span className="hover:!underline">Learn More</span>
-                      <span className="ml-1.5 text-[1.5em] ">►</span>
+                      <span className="ml-1.5 text-[1.5em]">►</span>
                     </a>
                   </div>
                 </div>
 
                 {/* Item 2 */}
-                <div className="flex flex-row pl-[1.25rem] text-left items-center gap-8">
+                <div className="flex flex-row items-center gap-8 pl-[1.25rem] text-left">
                   <div className="flex-1">
-                    <span className="text-[1.125rem] max-[400px]:text-[1rem] font-medium text-[#1a1288]">
+                    <span className="font-medium text-[1.125rem] text-[#1a1288] max-[400px]:text-[1rem]">
                       Comprehensive
                     </span>
-                    <h3 className="!mb-4 text-2xl max-[400px]:!text-[1.5rem] font-bold">
+                    <h3 className="!mb-4 text-2xl font-bold max-[400px]:!text-[1.5rem]">
                       Identity Verification
                     </h3>
-                    <p className="mb-6 max-[400px]:!text-[1rem] text-gray-600">
+                    <p className="mb-6 text-gray-600 max-[400px]:!text-[1rem]">
                       Stop modern identity fraud ranging from account onboarding
                       and recovery to interview fraud and remote work
                     </p>
                     <a
                       href="#"
-                      className="inline-flex items-center !text-[#1a1288] font-medium "
+                      className="inline-flex items-center font-medium !text-[#1a1288]"
                     >
                       <span className="hover:!underline">Learn More</span>
-                      <span className="ml-1.5  text-[1.5em] ">►</span>
+                      <span className="ml-1.5 text-[1.5em]">►</span>
                     </a>
                   </div>
                   <div>
                     <img
                       src="/hero_carousel_img_2.png"
-                      alt="Identity Verification"
-                      className="!h-auto min-w-[125px] rounded-l-2xl max-[480px]:!max-w-[125px]"
+                      alt="Identity Verification - Stop modern identity fraud"
+                      width="125"
+                      height="125"
+                      className="min-w-[125px] !h-auto rounded-l-2xl max-[480px]:!max-w-[125px]"
+                      loading="lazy"
                     />
                   </div>
                 </div>
 
                 {/* Item 3 */}
-                <div className="flex flex-row  text-left pl-[0.25rem]  items-center gap-8">
+                <div className="flex flex-row items-center gap-8 pl-[0.25rem] text-left">
                   <div>
                     <img
                       src="/hero_carousel_img_3.png"
-                      alt="Access Management"
-                      className="!h-auto min-w-[125px] rounded-r-2xl max-[480px]:!max-w-[125px]"
+                      alt="Risk & Policy Orchestration - Improve compliance with regulations"
+                      width="125"
+                      height="125"
+                      className="min-w-[125px] !h-auto rounded-r-2xl max-[480px]:!max-w-[125px]"
+                      loading="lazy"
                     />
                   </div>
                   <div className="flex-1">
-                    <span className="text-[1.125rem] max-[400px]:text-[1rem] font-medium text-[#1a1288]">
+                    <span className="font-medium text-[1.125rem] text-[#1a1288] max-[400px]:text-[1rem]">
                       Continuous
                     </span>
-                    <h3 className="!mb-4 text-2xl max-[400px]:!text-[1.5rem] font-bold">
+                    <h3 className="!mb-4 text-2xl font-bold max-[400px]:!text-[1.5rem]">
                       Risk & Policy Orchestration
                     </h3>
-                    <p className="mb-6 max-[400px]:!text-[1rem] text-gray-600">
+                    <p className="mb-6 text-gray-600 max-[400px]:!text-[1rem]">
                       Improve compliance with regulations and internal controls
                       while providing fewer clicks and less user pain
                     </p>
                     <a
                       href="#"
-                      className="inline-flex items-center !text-[#1a1288] font-medium "
+                      className="inline-flex items-center font-medium !text-[#1a1288]"
                     >
                       <span className="hover:!underline">Learn More</span>
-                      <span className="ml-1.5  text-[1.5em] ">►</span>
+                      <span className="ml-1.5 text-[1.5em]">►</span>
                     </a>
                   </div>
                 </div>
@@ -131,79 +142,40 @@ export default function Main() {
       {/* Infinite Logo Marquee */}
       <div className="scroll">
         <ul>
-          {[...Array(2)].map(() => (
-            <>
-              <li>
-                <img
-                  src="/company logos/Fiserv_logo.png"
-                  alt="Fiserv"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/cvs-health-logo-stacked3.png"
-                  alt="CVS Health"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/fido-alliance-logo-new.png"
-                  alt="FIDO"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/frontier-credit-union-dark.png"
-                  alt="Frontier CU"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/HCLogo-og.png"
-                  alt="HC"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/logo-state_auto_insurance.png"
-                  alt="State Auto"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/norwegian_air.png"
-                  alt="Norwegian"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/rakuten_logo.png"
-                  alt="Rakuten"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-              <li>
-                <img
-                  src="/company logos/UPG_RGB_Main_Blue.png"
-                  alt="UPG"
-                  className="w-40 h-40 object-contain rounded-lg"
-                />
-              </li>
-            </>
+          {[...Array(2)].map((_, arrayIndex) => (
+            <React.Fragment key={`marquee-${arrayIndex}`}>
+              {[
+                { src: "/company logos/Fiserv_logo.png", alt: "Fiserv - Partner", width: 160, height: 160 },
+                { src: "/company logos/cvs-health-logo-stacked3.png", alt: "CVS Health - Customer", width: 160, height: 160 },
+                { src: "/company logos/fido-alliance-logo-new.png", alt: "FIDO Alliance - Certified Partner", width: 160, height: 160 },
+                { src: "/company logos/frontier-credit-union-dark.png", alt: "Frontier Credit Union - Customer", width: 160, height: 160 },
+                { src: "/company logos/HCLogo-og.png", alt: "HC - Partner", width: 160, height: 160 },
+                { src: "/company logos/logo-state_auto_insurance.png", alt: "State Auto Insurance - Customer", width: 160, height: 160 },
+                { src: "/company logos/norwegian_air.png", alt: "Norwegian Air - Customer", width: 160, height: 160 },
+                { src: "/company logos/rakuten_logo.png", alt: "Rakuten - Customer", width: 160, height: 160 },
+                { src: "/company logos/UPG_RGB_Main_Blue.png", alt: "UPG - Partner", width: 160, height: 160 },
+              ].map((logo, index) => (
+                <li key={`logo-${arrayIndex}-${index}`}>
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="object-contain w-40 h-40 rounded-lg"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </li>
+              ))}
+            </React.Fragment>
           ))}
         </ul>
       </div>
 
+      {/* FIXED Identity Section - Restored original responsive layout */}
       <section id="identity" className="w-full flex justify-center">
         <div className="flex flex-col w-full lg:flex-row gap-6 md:px-10 max-w-[calc(1178px+1rem)]">
-          {/* Column 1 */}
+          {/* Column 1 - Workforce */}
           <div className="w-full flex !h-[100%] flex-col shrink-1 md:flex-row items-center lg:w-1/2 md:p-10 gap-6 bg-hypr-blue md:rounded-[20px]">
             <div className="w-full md:flex flex-col md:flex-row gap-6 items-center justify-center">
               <picture>
@@ -213,8 +185,12 @@ export default function Main() {
                 />
                 <img
                   src="../workforce_mobile.png"
-                  alt="Example 1"
+                  alt="Identity Security for Workforce - Secure employee identity lifecycle"
                   className="sm:h-auto min-w-[100%] md:min-w-[160px] rounded-lg object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width="320"
+                  height="240"
                 />
               </picture>
 
@@ -236,6 +212,7 @@ export default function Main() {
             </div>
           </div>
 
+          {/* Column 2 - Customer */}
           <div className="w-full flex !h-[100%] flex-col shrink-1 md:flex-row items-center lg:w-1/2 md:p-10 gap-6 bg-yellow md:rounded-[20px]">
             <div className="w-full md:flex flex-col md:flex-row gap-6 items-center justify-center">
               <picture>
@@ -245,8 +222,12 @@ export default function Main() {
                 />
                 <img
                   src="../customer_mobile.png"
-                  alt="Example 2"
+                  alt="Identity Security for Customers - Reduce account takeover fraud"
                   className="sm:h-auto min-w-[100%] md:min-w-[160px] rounded-lg object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width="320"
+                  height="240"
                 />
               </picture>
 
@@ -269,58 +250,57 @@ export default function Main() {
           </div>
         </div>
       </section>
+
+      {/* Statistics Section */}
       <section id="statistics" className="w-full pt-[30px] pb-[10px] bg-white">
-        <div className="mx-auto max-w-[1178px] grid grid-cols-1 md:grid-cols-3 gap-8 text-center align-middle md:text-left">
+        <div className="grid max-w-[1178px] grid-cols-1 gap-8 mx-auto text-center align-middle md:grid-cols-3 md:text-left">
           {/* Column 1 */}
-          <div className="px-2 flex flex-col justify-start">
-            <h2 className="text-xl text-center !mb-2">
+          <div className="flex flex-col justify-start px-2">
+            <h2 className="mb-2 text-xl text-center">
               Up to
-              <span className="text-[3.35rem] text-yellow font-bold">
-                {" "}
-                98.4%
-              </span>
+              <span className="text-[3.35rem] font-bold text-yellow"> 98.4%</span>
             </h2>
-            <p className="text-[1.175rem] text-center text-gray-600 !mx-auto !mb-[1.25rem]  max-w-[200px]">
+            <p className="mb-[1.25rem] text-center text-gray-600 text-[1.175rem] mx-auto max-w-[200px]">
               Reduction in
               <br /> Account-Takeover Fraud
             </p>
           </div>
 
           {/* Column 2 */}
-          <div className="px-2 flex flex-col justify-start shrink-0">
-            <h2 className="text-center !mb-2">
-              <span className="text-[3.35rem] text-yellow font-bold">
-                25,000,000+
-              </span>
+          <div className="flex flex-col justify-start px-2 shrink-0">
+            <h2 className="mb-2 text-center">
+              <span className="text-[3.35rem] font-bold text-yellow">25,000,000+</span>
             </h2>
-            <p className="text-[1.175rem] text-center text-gray-600 !mx-auto max-w-[140px]">
+            <p className="text-center text-gray-600 text-[1.175rem] mx-auto max-w-[140px]">
               Deployed Users and Growing
             </p>
           </div>
 
           {/* Column 3 */}
-          <div className="px-2 flex flex-col justify-start shrink-0">
-            <h2 className="text-center !mb-2">
-              <span className="text-[3.35rem] text-yellow font-bold">324%</span>
+          <div className="flex flex-col justify-start px-2 shrink-0">
+            <h2 className="mb-2 text-center">
+              <span className="text-[3.35rem] font-bold text-yellow">324%</span>
             </h2>
-            <p className=" text-[1.175rem] text-center text-gray-600 !mx-auto  max-w-[140px]">
+            <p className="text-center text-gray-600 text-[1.175rem] mx-auto max-w-[140px]">
               ROI Verified by Forrester®
             </p>
           </div>
         </div>
       </section>
+
+      {/* Passwordless Section */}
       <section
         id="passwordless"
-        className="w-full max-w-[1300px] bg-[url('/HYPR_Background2_Passwordless4.png')] bg-center bg-auto bg-no-repeat p-[1.25rem] my-[3.75rem] !mx-auto rounded-[30px]"
+        className="w-full max-w-[1300px] p-[1.25rem] my-[3.75rem] mx-auto rounded-[30px] bg-[url('/HYPR_Background2_Passwordless4.png')] bg-center bg-auto bg-no-repeat"
       >
-        <div className="max-w-[1178px] mx-auto flex flex-col-reverse md:flex-row items-center gap-8 !px-[1.25rem] rounded-xl">
+        <div className="flex flex-col-reverse items-center max-w-[1178px] gap-8 mx-auto rounded-xl md:flex-row !px-[1.25rem]">
           {/* Text Column */}
-          <div className="w-full flex flex-col md:w-1/2 text-center md:text-left px-[0.75rem]">
-            <span className="text-[1.85rem] text-yellow ">2025</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="flex flex-col w-full px-[0.75rem] text-center md:w-1/2 md:text-left">
+            <span className="text-yellow text-[1.85rem]">2025</span>
+            <h2 className="mb-4 text-3xl font-bold md:text-4xl">
               State of Passwordless Identity Assurance
             </h2>
-            <p className="text-gray-700 text-lg">
+            <p className="text-lg text-gray-700">
               The fifth annual edition includes an expanded investigation into
               the trends shaping the identity security landscape. Based on
               global security research conducted by S&P Global Market
@@ -329,7 +309,6 @@ export default function Main() {
               determine the most effective defense strategies.
             </p>
             <div className="CTA">
-              {" "}
               <a className="button" href="#">
                 Get a report
               </a>
@@ -340,141 +319,160 @@ export default function Main() {
           <div className="w-full md:w-1/2">
             <img
               src="/SoPIA 2025 Cover.png"
-              alt="Descriptive Alt Text"
+              alt="State of Passwordless Identity Assurance 2025 Report Cover"
+              width="600"
+              height="800"
               className="w-full h-auto"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
       </section>
+
+      {/* HYPR Way Section */}
       <section id="HYRP-way" className="w-full pt-[1.25rem]">
-        <div className="wrapper mx-auto px-[1.25rem]">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-            <h2 className="!mt-6 col-span-full text-center text-2xl font-semibold mb-2 lg:mb-6">
+        <div className="px-[1.25rem] mx-auto wrapper">
+          <div className="grid items-stretch grid-cols-1 gap-8 lg:grid-cols-3">
+            <h2 className="col-span-full mt-6 mb-2 text-2xl font-semibold text-center lg:mb-6">
               The HYRP way
             </h2>
 
             {/* Card 1 */}
-            <div className="flex flex-col gap-6 justify-between items-center rounded-lg bg-transparent px-3 py-8 text-blue w-full">
-              <div className="flex gap-6 flex-col items-center">
+            <div className="flex flex-col items-center justify-between w-full gap-6 px-3 py-8 rounded-lg bg-transparent text-blue">
+              <div className="flex flex-col items-center gap-6">
                 <img
                   src="../passkeyshield.webp"
-                  alt="Passkey shield"
-                  className="ml-[2rem] w-[206px] h-auto"
+                  alt="No Shared Credentials - Phishing-resistant MFA with open standards"
+                  width="206"
+                  height="206"
+                  className="w-[206px] h-auto ml-[2rem]"
+                  loading="lazy"
+                  decoding="async"
                 />
-                <h4 className="text-xl font-bold my-5 text-center">
+                <h4 className="my-5 text-xl font-bold text-center">
                   No Shared <br /> Credentials
                 </h4>
-                <p className="max-w-[400px] text-sm text-white/80 text-center">
+                <p className="max-w-[400px] text-center text-sm text-white/80">
                   Phishing-resistant MFA from desktop to cloud built on proven
                   open standards with no password-based fallbacks
                 </p>
               </div>
-              {/* bottom spacer if needed (keeps equal spacing to CTA in other cards) */}
-              <div className="mt-6 w-full text-center"></div>
+              <div className="w-full mt-6 text-center"></div>
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col gap-6 justify-between items-center rounded-lg bg-transparent px-3 py-8 w-full text-blue">
-              <div className="flex flex-col gap-6 items-center">
+            <div className="flex flex-col items-center justify-between w-full gap-6 px-3 py-8 rounded-lg bg-transparent text-blue">
+              <div className="flex flex-col items-center gap-6">
                 <img
                   src="/identitysecurity.webp"
-                  alt="Identity security"
+                  alt="Comprehensive Identity Security - End-to-end protection"
+                  width="246"
+                  height="246"
                   className="w-[246px] h-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
-                <h4 className="text-xl font-bold my-5 text-center">
+                <h4 className="my-5 text-xl font-bold text-center">
                   Comprehensive <br /> Identity Security
                 </h4>
-                <p className="max-w-[400px] mb-6 text-sm text-white/80 text-center">
+                <p className="max-w-[400px] mb-6 text-center text-sm text-white/80">
                   End-to-end identity security from day zero with unified
                   passwordless authentication, adaptive risk mitigation, and
                   automated identity verification
                 </p>
               </div>
-
               <div className="CTA">
-                {" "}
                 <a className="button" href="#">
-                  {" "}
-                  SPEAK TO AN EXPERT{" "}
-                </a>{" "}
+                  SPEAK TO AN EXPERT
+                </a>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="flex flex-col gap-6 justify-between items-center rounded-lg bg-transparent px-3 py-8 w-full text-blue">
-              <div className="flex gap-6 flex-col items-center">
+            <div className="flex flex-col items-center justify-between w-full gap-6 px-3 py-8 rounded-lg bg-transparent text-blue">
+              <div className="flex flex-col items-center gap-6">
                 <img
                   src="../feature3.webp"
-                  alt="Feature 3"
+                  alt="Universal User Experience - Limitless authentication flows"
+                  width="187"
+                  height="187"
                   className="w-[187px] h-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
-                <h4 className="text-xl font-bold my-5 text-center">
+                <h4 className="my-5 text-xl font-bold text-center">
                   Universal <br /> User Experience
                 </h4>
-                <p className="max-w-[400px] text-sm text-white/80 text-center">
+                <p className="max-w-[400px] text-center text-sm text-white/80">
                   Limitless authentication flows and continuous real-time risk
                   assessment to deliver a world-class experience for all users
                 </p>
               </div>
-
-              <div className="mt-6 w-full text-center"></div>
+              <div className="w-full mt-6 text-center"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="w-full flex flex-col items-center">
+      {/* Testimonials Section */}
+      <section className="flex flex-col items-center w-full">
         <div className="max-w-[1300px] mx-auto rounded-2xl !pt-[4rem]">
-          <div className="flex flex-col items-center max-w-[1200px] text-center text-black mb-12 px-4">
-            <h2 className="text-[2.25rem] md:text-[3rem] md:text-4xl font-bold text-hypr-blue !mb-[1.5rem] max-w-[900px]">
+          <div className="flex flex-col items-center max-w-[1200px] px-4 mb-12 text-center text-black">
+            <h2 className="mb-[1.5rem] text-[2.25rem] font-bold text-hypr-blue max-w-[900px] md:text-[3rem] md:text-4xl">
               Customers Give HYPR Highest Ratings Across the Board
             </h2>
             <hr className="section__divider" />
-
             <img
               src="../G2-badges-section-650x150.svg"
-              alt="Secure Identity"
+              alt="G2 Badges - HYPR customer ratings and awards"
+              width="1200"
+              height="150"
               className="w-[1200px] h-auto px-8"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
       </section>
+
+      {/* About Section */}
       <section
         id="about"
-        className="w-full max-w-[1300px] py-[1.25rem] my-[3.75rem] mx-auto rounded-[30px]
-      "
+        className="w-full max-w-[1300px] py-[1.25rem] my-[3.75rem] mx-auto rounded-[30px]"
       >
-        <div className=" flex flex-wrap flex-row max-w-[1178px] items-center mx-auto px-[1.25rem]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col items-center px-[1rem] justify-center text-center md:items-start md:text-left">
-              <h2 className="text-3xl lg:text-4xl font-bold !mt-[1.25rem] max-w-[500px] mx-auto md:mx-0">
+        <div className="flex flex-row flex-wrap items-center max-w-[1178px] px-[1.25rem] mx-auto">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="flex flex-col items-center justify-center px-[1rem] text-center md:items-start md:text-left">
+              <h2 className="mt-[1.25rem] text-3xl font-bold max-w-[500px] mx-auto lg:text-4xl md:mx-0">
                 The HYPR Identity Assurance <br />
                 Platform
               </h2>
-              <p className="max-w-[470px] !my-[1.25rem] mx-auto md:mx-0">
+              <p className="my-[1.25rem] max-w-[470px] mx-auto md:mx-0">
                 <span>
                   Reduce risk at every point in the identity lifecycle with the
                   only platform that unifies phishing-resistant
                 </span>
                 <span>
-                  {" "}
                   passwordless authentication, adaptive risk mitigation, and
                   automated identity verification.
                 </span>
               </p>
-
-              <div className="flex justify-center sm:justify-start !shrink-0">
+              <div className="flex justify-center !shrink-0 sm:justify-start">
                 <a className="button" href="#">
                   MORE ABOUT THE HYRP PLATFORM
                 </a>
               </div>
             </div>
-
             <div className="flex justify-center">
               <img
                 src="../platformHYPR.webp"
-                alt="Secure Identity"
-                className="w-full h-auto object-cover md:object-contain rounded-lg"
+                alt="HYPR Identity Assurance Platform Dashboard - Unified security interface"
+                width="600"
+                height="400"
+                className="w-full h-auto rounded-lg object-cover md:object-contain"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
