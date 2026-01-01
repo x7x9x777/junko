@@ -103,11 +103,12 @@ export default function Slider() {
                   Eliminate credential phishing attacks while improving user
                   experience for your workforce and customers
                 </p>
-                <a href="#" className="">
-                  Learn More
-                  {/* <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg> */}
+                <a
+                  href="#"
+                  className="inline-flex items-center !text-[#1a1288] font-medium "
+                >
+                  <span className="hover:!underline">Learn More</span>
+                  <span className="ml-1.5  text-[1.5em] ">►</span>
                 </a>
               </div>
 
@@ -130,7 +131,13 @@ export default function Slider() {
                   Stop modern identity fraud ranging from account onboarding and
                   recovery to interview fraud and remote work
                 </p>
-                <a className="">Learn More</a>
+                <a
+                  href="#"
+                  className="inline-flex items-center !text-[#1a1288] font-medium "
+                >
+                  <span className="hover:!underline">Learn More</span>
+                  <span className="ml-1.5 text-[1.5em]">►</span>
+                </a>
               </div>
               <div className="flex flex-col justify-center  flex-shrink-0 w-full md:w-auto">
                 <img
@@ -145,14 +152,21 @@ export default function Slider() {
               <div className="flex flex-col justify-center w-full text-left gap-4">
                 <div>
                   <span className="text-md font-medium text-[#1a1288]">
-                    Secure
+                    Continuous
                   </span>
-                  <h3 className="!mb-2">Access Management</h3>
+                  <h3 className="!mb-2">Risk & Policy Orchestration</h3>
                 </div>
                 <p className="">
-                  Advanced security solutions for your enterprise needs
+                  Improve compliance with regulations and internal controls
+                  while providing fewer clicks and less user pain
                 </p>
-                <a>Learn More</a>
+                <a
+                  href="#"
+                  className="inline-flex items-center !text-[#1a1288] font-medium "
+                >
+                  <span className="hover:!underline">Learn More</span>
+                  <span className="ml-1.5  text-[1.5em] ">►</span>
+                </a>
               </div>
               <div className="flex flex-col justify-center  flex-shrink-0 w-full md:w-auto">
                 <img
