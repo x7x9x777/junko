@@ -16,17 +16,17 @@ export default function Slider() {
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
     },
-    created() {
-      setLoaded(true);
-      // Add resize observer
-      const observer = new ResizeObserver(() => {
-        instanceRef.current?.update();
-      });
-      if (sliderRef.current) {
-        observer.observe(sliderRef.current);
-      }
-      return () => {
-        observer.disconnect();
+   created(slider) {
+  setLoaded(true);
+
+  const observer = new ResizeObserver(() => {
+    slider.update();
+  });
+
+  observer.observe(slider.container);
+
+  return () => {
+    observer.disconnect();
       };
     },
   });
@@ -74,7 +74,7 @@ export default function Slider() {
       </svg>
     );
   }
-  const isInitialized = instanceRef.current !== null;
+ 
 
   return (
     <>
