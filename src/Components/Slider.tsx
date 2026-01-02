@@ -78,7 +78,7 @@ export default function Slider() {
 
   return (
     <>
-      <div className="">
+      <div>
         <div className="navigation-wrapper ">
           <Arrow
             left
@@ -90,15 +90,15 @@ export default function Slider() {
               // currentSlide === 0
             }
           />
+          {/* Slide 1 */}
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide flex flex-row !gap-2 justify-between">
               <div className="flex flex-col justify-center w-full text-left gap-4">
-                {/* <div className="flex flex-col"> */}
                 <span className="text-md font-medium text-[#1a1288]">
                   Strong
                 </span>
                 <h3 className="!mb-2">Passwordless Authentication</h3>
-                {/* </div> */}
+
                 <p className="">
                   Eliminate credential phishing attacks while improving user
                   experience for your workforce and customers
@@ -119,6 +119,7 @@ export default function Slider() {
                 />
               </div>
             </div>
+            {/* Slide 2 */}
             <div className="keen-slider__slide min-w-full flex flex-row !gap-2 justify-between h-[450px]">
               <div className="flex flex-col justify-center w-full text-left gap-4">
                 <div>
@@ -181,11 +182,7 @@ export default function Slider() {
             onClick={(e: any) =>
               e.stopPropagation() || instanceRef.current?.next()
             }
-            disabled={
-              false
-              //  currentSlide ===
-              //  instanceRef.current?.track.details.slides.length - 1
-            }
+            disabled={false}
           />
         </div>
 

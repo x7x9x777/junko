@@ -859,7 +859,7 @@ export default function Header() {
                 </a>
                 <HoverBridge />
                 <div
-                  className="drop-menu fixed -translate-x-1/2 w-[1113px] top-[100px]  left-1/2  bg-white shadow-xl rounded-lg py-2 
+                  className="drop-menu fixed -translate-x-1/2 w-[1113px] top-[100px]  left-1/2  bg-white shadow-xl rounded-lg 
                      opacity-0 invisible scale-95 
                      group-hover:opacity-100 group-hover:visible group-hover:scale-100 
                      transition-all duration-200 z-50 border border-gray-100"
@@ -944,11 +944,12 @@ export default function Header() {
                     </div>
 
                     {/* Third col */}
-                    <div className="menu-col">
-                      <div>
-                        <div>
-                          <div className="mega-menu__cta-img-ctr">
+                    <div className="menu-col !h-[100%] bg-gray-100">
+                      
+                        
+                          <div className="w-full max-w-full h-auto">
                             <img
+                            className="w-full max-w-full h-auto"
                               src="https://web.archive.org/web/20250619131416im_/https://www.hypr.com/hubfs/Media%20Graphics/SOPIA_SOCIAL_CARD.webp"
                               alt="State of Passwordless Identity Assurance Report"
                               loading="lazy"
@@ -967,8 +968,8 @@ export default function Header() {
                             attack vectors, the greatest security gaps, and
                             technology adoption trends
                           </p>
-                        </div>
-                      </div>
+                        
+                      
                     </div>
                   </div>
                 </div>
