@@ -1031,7 +1031,7 @@ export default function Header() {
 
         {/* Mobile nav */}
         {isOpen && (
-          <nav className="lg:hidden fixed z-999 mobile-nav left-0 h-[calc(100vh-100px)] w-[70vw] max-w-[520px">
+          <nav className="lg:hidden fixed z-[9999] mobile-nav left-0 h-[calc(100vh-100px)] w-[70vw] max-w-[520px">
             <Menu />
           </nav>
         )}
