@@ -569,7 +569,7 @@ export default function Header() {
                       <div className="w-full max-w-full h-auto">
                         <img
                           className="w-full max-w-full h-auto"
-                          src="/public/Forrester-TEI-Report-SC.webp"
+                          src="/Forrester-TEI-Report-SC.webp"
                           alt="The Total Economic Impact™ of HYPR"
                           loading="lazy"
                         ></img>
