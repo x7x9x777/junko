@@ -77,6 +77,9 @@ header {
     color: #000000;
     padding: 1rem 0;
     scrollbar-gutter: stable;
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   }
   
   .nav-item {

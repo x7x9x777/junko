@@ -248,7 +248,7 @@ export const Menu = () => {
   ];
 
   return (
-    <div className="mobile-menu h-[100%] overflow-y-auto ">
+    <div className="mobile-menu">
       <ul className="flex flex-col   space-y-2 text-sm text-left !my-[2rem] ">
         {menuItems.map((item) => (
           <li key={item.id} className="pb-2 border-b border-gray-400">
