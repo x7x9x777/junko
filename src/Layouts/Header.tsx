@@ -101,7 +101,7 @@ export default function Header() {
                     {/* First col */}
                     <div className="menu-col">
                       <a
-                        href="/web/20250619131416/https://www.hypr.com/platform"
+                        href="/#"
                         className="link-title"
                       >
                         HYPR Identity Assurance Platform
@@ -114,13 +114,13 @@ export default function Header() {
                       <ul className="!mt-[1.5rem]">
                         <li className="flex flex-row gap-2 items-center">
                           <img
-                            src="/public/hypr-auth.svg"
+                            src="/hypr-auth.svg"
                             className="mb-6"
                           ></img>
                           <div>
                             <a
                               className="link-regular"
-                              href="/web/20250619131416/https://www.hypr.com/platform/hypr-authenticate-passwordless-mfa"
+                              href="#"
                             >
                               HYPR Authenticate: Passwordless MFA
                             </a>
@@ -132,7 +132,7 @@ export default function Header() {
                         </li>
                         <li className="flex flex-row gap-2 items-center">
                           <img
-                            src="/public/hypr-adapt.svg"
+                            src="/hypr-adapt.svg"
                             className="mb-6"
                           ></img>
                           <div>
@@ -151,7 +151,7 @@ export default function Header() {
                         </li>
                         <li className="flex flex-row gap-2 items-center">
                           <img
-                            src="/public/hypr-affirm.svg"
+                            src="/hypr-affirm.svg"
                             className="mb-6"
                           ></img>
                           <div className="gap-1">
@@ -311,7 +311,7 @@ export default function Header() {
                       <div className="w-full max-w-full h-auto">
                         <img
                           className="w-full max-w-full h-auto"
-                          src="https://web.archive.org/web/20250619131416im_/https://www.hypr.com/hubfs/Media%20Graphics/HYPR-Enterprise-Passkeys_1300x749.webp"
+                          src="HYPR-Enterprise-Passkeys_1300x749.webp"
                           alt="HYPR Enterprise Passkeys"
                           loading="lazy"
                         ></img>
@@ -950,7 +950,7 @@ export default function Header() {
                           <div className="w-full max-w-full h-auto">
                             <img
                             className="w-full max-w-full h-auto"
-                              src="https://web.archive.org/web/20250619131416im_/https://www.hypr.com/hubfs/Media%20Graphics/SOPIA_SOCIAL_CARD.webp"
+                              src="SOPIA_SOCIAL_CARD.webp"
                               alt="State of Passwordless Identity Assurance Report"
                               loading="lazy"
                             ></img>
